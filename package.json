@@ -1,0 +1,15 @@
+{
+    "devDependencies": {
+        "typescript": "^4.5.5"
+    },
+    "dependencies": {
+        "autoprefixer": "^6.5.4",
+        "uuid": "^8.3.2"
+    },
+    "private": true,
+    "browserslist": [
+        "last 1 version",
+        "> 1%",
+        "IE 10"
+    ]
+}
