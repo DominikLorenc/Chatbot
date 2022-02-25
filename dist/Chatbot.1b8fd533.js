@@ -207,13 +207,12 @@ var chatbotUtils = (_a = function () {
   elementToAnimation.style.animation = animationName;
 }, _a);
 exports.default = chatbotUtils;
-},{}],"assets/icons.js":[function(require,module,exports) {
+},{}],"assets/icons.ts":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
 var icons = {
   luncherIcon: "https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/45/000000/external-chatbot-online-shopping-vitaliy-gorbachev-blue-vitaly-gorbachev.png",
   topAvatarIcon: "https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/25/000000/external-robot-support-vitaliy-gorbachev-blue-vitaly-gorbachev.png",
@@ -221,8 +220,7 @@ var icons = {
   sendIcon: "https://img.icons8.com/external-kmg-design-flat-kmg-design/28/000000/external-send-user-interface-kmg-design-flat-kmg-design.png",
   offIcon: "https://img.icons8.com/external-kmg-design-glyph-kmg-design/28/000000/external-send-user-interface-kmg-design-glyph-kmg-design.png"
 };
-var _default = icons;
-exports.default = _default;
+exports.default = icons;
 },{}],"ChatbotElementCreator.ts":[function(require,module,exports) {
 "use strict";
 
@@ -316,7 +314,7 @@ var ChatbotElementCreator = function () {
 }();
 
 exports.default = ChatbotElementCreator;
-},{"./ChatbotUtils":"ChatbotUtils.ts","./assets/icons":"assets/icons.js"}],"constans.ts":[function(require,module,exports) {
+},{"./ChatbotUtils":"ChatbotUtils.ts","./assets/icons":"assets/icons.ts"}],"constans.ts":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -502,7 +500,7 @@ var ChatbotLogic = function () {
 }();
 
 exports.default = ChatbotLogic;
-},{"./ChatbotUtils":"ChatbotUtils.ts","./constans":"constans.ts","./assets/icons":"assets/icons.js"}],"ChatbotController.ts":[function(require,module,exports) {
+},{"./ChatbotUtils":"ChatbotUtils.ts","./constans":"constans.ts","./assets/icons":"assets/icons.ts"}],"ChatbotController.ts":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -530,12 +528,8 @@ var ChatbotController = function () {
   return ChatbotController;
 }();
 
-exports.default = ChatbotController; // jest
-// funkcyjne z ts
-// getMyAge "11a" -> błąd, że string nie ma samych numerów
-// arrayMethods
-// pagination
-},{"./ChatbotElementCreator":"ChatbotElementCreator.ts","./ChatbotLogic":"ChatbotLogic.ts"}],"node_modules/uuid/dist/esm-browser/rng.js":[function(require,module,exports) {
+exports.default = ChatbotController;
+},{"./ChatbotElementCreator":"ChatbotElementCreator.ts","./ChatbotLogic":"ChatbotLogic.ts"}],"../node_modules/uuid/dist/esm-browser/rng.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -562,7 +556,7 @@ function rng() {
 
   return getRandomValues(rnds8);
 }
-},{}],"node_modules/uuid/dist/esm-browser/regex.js":[function(require,module,exports) {
+},{}],"../node_modules/uuid/dist/esm-browser/regex.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -571,7 +565,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;
 exports.default = _default;
-},{}],"node_modules/uuid/dist/esm-browser/validate.js":[function(require,module,exports) {
+},{}],"../node_modules/uuid/dist/esm-browser/validate.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -589,7 +583,7 @@ function validate(uuid) {
 
 var _default = validate;
 exports.default = _default;
-},{"./regex.js":"node_modules/uuid/dist/esm-browser/regex.js"}],"node_modules/uuid/dist/esm-browser/stringify.js":[function(require,module,exports) {
+},{"./regex.js":"../node_modules/uuid/dist/esm-browser/regex.js"}],"../node_modules/uuid/dist/esm-browser/stringify.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -630,7 +624,7 @@ function stringify(arr) {
 
 var _default = stringify;
 exports.default = _default;
-},{"./validate.js":"node_modules/uuid/dist/esm-browser/validate.js"}],"node_modules/uuid/dist/esm-browser/v1.js":[function(require,module,exports) {
+},{"./validate.js":"../node_modules/uuid/dist/esm-browser/validate.js"}],"../node_modules/uuid/dist/esm-browser/v1.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -738,7 +732,7 @@ function v1(options, buf, offset) {
 
 var _default = v1;
 exports.default = _default;
-},{"./rng.js":"node_modules/uuid/dist/esm-browser/rng.js","./stringify.js":"node_modules/uuid/dist/esm-browser/stringify.js"}],"node_modules/uuid/dist/esm-browser/parse.js":[function(require,module,exports) {
+},{"./rng.js":"../node_modules/uuid/dist/esm-browser/rng.js","./stringify.js":"../node_modules/uuid/dist/esm-browser/stringify.js"}],"../node_modules/uuid/dist/esm-browser/parse.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -784,7 +778,7 @@ function parse(uuid) {
 
 var _default = parse;
 exports.default = _default;
-},{"./validate.js":"node_modules/uuid/dist/esm-browser/validate.js"}],"node_modules/uuid/dist/esm-browser/v35.js":[function(require,module,exports) {
+},{"./validate.js":"../node_modules/uuid/dist/esm-browser/validate.js"}],"../node_modules/uuid/dist/esm-browser/v35.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -863,7 +857,7 @@ function _default(name, version, hashfunc) {
   generateUUID.URL = URL;
   return generateUUID;
 }
-},{"./stringify.js":"node_modules/uuid/dist/esm-browser/stringify.js","./parse.js":"node_modules/uuid/dist/esm-browser/parse.js"}],"node_modules/uuid/dist/esm-browser/md5.js":[function(require,module,exports) {
+},{"./stringify.js":"../node_modules/uuid/dist/esm-browser/stringify.js","./parse.js":"../node_modules/uuid/dist/esm-browser/parse.js"}],"../node_modules/uuid/dist/esm-browser/md5.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1087,7 +1081,7 @@ function md5ii(a, b, c, d, x, s, t) {
 
 var _default = md5;
 exports.default = _default;
-},{}],"node_modules/uuid/dist/esm-browser/v3.js":[function(require,module,exports) {
+},{}],"../node_modules/uuid/dist/esm-browser/v3.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1104,7 +1098,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var v3 = (0, _v.default)('v3', 0x30, _md.default);
 var _default = v3;
 exports.default = _default;
-},{"./v35.js":"node_modules/uuid/dist/esm-browser/v35.js","./md5.js":"node_modules/uuid/dist/esm-browser/md5.js"}],"node_modules/uuid/dist/esm-browser/v4.js":[function(require,module,exports) {
+},{"./v35.js":"../node_modules/uuid/dist/esm-browser/v35.js","./md5.js":"../node_modules/uuid/dist/esm-browser/md5.js"}],"../node_modules/uuid/dist/esm-browser/v4.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1142,7 +1136,7 @@ function v4(options, buf, offset) {
 
 var _default = v4;
 exports.default = _default;
-},{"./rng.js":"node_modules/uuid/dist/esm-browser/rng.js","./stringify.js":"node_modules/uuid/dist/esm-browser/stringify.js"}],"node_modules/uuid/dist/esm-browser/sha1.js":[function(require,module,exports) {
+},{"./rng.js":"../node_modules/uuid/dist/esm-browser/rng.js","./stringify.js":"../node_modules/uuid/dist/esm-browser/stringify.js"}],"../node_modules/uuid/dist/esm-browser/sha1.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1247,7 +1241,7 @@ function sha1(bytes) {
 
 var _default = sha1;
 exports.default = _default;
-},{}],"node_modules/uuid/dist/esm-browser/v5.js":[function(require,module,exports) {
+},{}],"../node_modules/uuid/dist/esm-browser/v5.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1264,7 +1258,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var v5 = (0, _v.default)('v5', 0x50, _sha.default);
 var _default = v5;
 exports.default = _default;
-},{"./v35.js":"node_modules/uuid/dist/esm-browser/v35.js","./sha1.js":"node_modules/uuid/dist/esm-browser/sha1.js"}],"node_modules/uuid/dist/esm-browser/nil.js":[function(require,module,exports) {
+},{"./v35.js":"../node_modules/uuid/dist/esm-browser/v35.js","./sha1.js":"../node_modules/uuid/dist/esm-browser/sha1.js"}],"../node_modules/uuid/dist/esm-browser/nil.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1273,7 +1267,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = '00000000-0000-0000-0000-000000000000';
 exports.default = _default;
-},{}],"node_modules/uuid/dist/esm-browser/version.js":[function(require,module,exports) {
+},{}],"../node_modules/uuid/dist/esm-browser/version.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1295,7 +1289,7 @@ function version(uuid) {
 
 var _default = version;
 exports.default = _default;
-},{"./validate.js":"node_modules/uuid/dist/esm-browser/validate.js"}],"node_modules/uuid/dist/esm-browser/index.js":[function(require,module,exports) {
+},{"./validate.js":"../node_modules/uuid/dist/esm-browser/validate.js"}],"../node_modules/uuid/dist/esm-browser/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1375,7 +1369,7 @@ var _stringify = _interopRequireDefault(require("./stringify.js"));
 var _parse = _interopRequireDefault(require("./parse.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./v1.js":"node_modules/uuid/dist/esm-browser/v1.js","./v3.js":"node_modules/uuid/dist/esm-browser/v3.js","./v4.js":"node_modules/uuid/dist/esm-browser/v4.js","./v5.js":"node_modules/uuid/dist/esm-browser/v5.js","./nil.js":"node_modules/uuid/dist/esm-browser/nil.js","./version.js":"node_modules/uuid/dist/esm-browser/version.js","./validate.js":"node_modules/uuid/dist/esm-browser/validate.js","./stringify.js":"node_modules/uuid/dist/esm-browser/stringify.js","./parse.js":"node_modules/uuid/dist/esm-browser/parse.js"}],"utils.ts":[function(require,module,exports) {
+},{"./v1.js":"../node_modules/uuid/dist/esm-browser/v1.js","./v3.js":"../node_modules/uuid/dist/esm-browser/v3.js","./v4.js":"../node_modules/uuid/dist/esm-browser/v4.js","./v5.js":"../node_modules/uuid/dist/esm-browser/v5.js","./nil.js":"../node_modules/uuid/dist/esm-browser/nil.js","./version.js":"../node_modules/uuid/dist/esm-browser/version.js","./validate.js":"../node_modules/uuid/dist/esm-browser/validate.js","./stringify.js":"../node_modules/uuid/dist/esm-browser/stringify.js","./parse.js":"../node_modules/uuid/dist/esm-browser/parse.js"}],"utils.ts":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1402,7 +1396,7 @@ var questions = [{
   answer: 'Lorem ipsusentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, nemo?'
 }];
 exports.default = questions;
-},{"uuid":"node_modules/uuid/dist/esm-browser/index.js"}],"Chatbot.ts":[function(require,module,exports) {
+},{"uuid":"../node_modules/uuid/dist/esm-browser/index.js"}],"Chatbot.ts":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -1432,7 +1426,7 @@ var Chatbot = function () {
 }();
 
 var chat = new Chatbot(utils_1.default);
-},{"./ChatbotStore":"ChatbotStore.ts","./ChatbotController":"ChatbotController.ts","./utils":"utils.ts"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./ChatbotStore":"ChatbotStore.ts","./ChatbotController":"ChatbotController.ts","./utils":"utils.ts"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -1460,7 +1454,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59164" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56058" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -1636,5 +1630,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","Chatbot.ts"], null)
+},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","Chatbot.ts"], null)
 //# sourceMappingURL=/Chatbot.1b8fd533.js.map

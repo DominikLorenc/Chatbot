@@ -14,10 +14,3 @@ class ChatbotController {
 }
 
 export default ChatbotController;
-
-// jest
-// funkcyjne z ts
-
-// getMyAge "11a" -> błąd, że string nie ma samych numerów
-// arrayMethods
-// pagination
