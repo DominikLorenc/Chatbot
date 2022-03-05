@@ -43,7 +43,7 @@ const chatbotUtils: IChatbotUtils = class ChatbotUtils {
         setTimeout(() => callback(), time);
     };
 
-    static filterId = (array: QuestionsType, id: string) => {
+    static getArrayElementById = (array: QuestionsType, id: string) => {
         const doesElementExist = array.filter((el) => el.id === id);
 
         if (doesElementExist.length === 0) {

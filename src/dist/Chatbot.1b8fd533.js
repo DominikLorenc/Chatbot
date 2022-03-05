@@ -193,7 +193,7 @@ var chatbotUtils = (_a = function () {
   setTimeout(function () {
     return callback();
   }, time);
-}, _a.filterId = function (array, id) {
+}, _a.getArrayElementById = function (array, id) {
   var doesElementExist = array.filter(function (el) {
     return el.id === id;
   });
@@ -475,7 +475,7 @@ var ChatbotLogic = function () {
     };
 
     this.selectQuestion = function (id) {
-      var _a = ChatbotUtils_1.default.filterId(_this.store.questions, id),
+      var _a = ChatbotUtils_1.default.getArrayElementById(_this.store.questions, id),
           question = _a.question,
           answer = _a.answer;
 

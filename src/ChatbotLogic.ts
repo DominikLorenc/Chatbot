@@ -125,7 +125,7 @@ class ChatbotLogic implements IChatbotLogic {
     };
 
     selectQuestion = (id: string) => {
-        const { question, answer } = ChatbotUtils.filterId(this.store.questions, id);
+        const { question, answer } = ChatbotUtils.getArrayElementById(this.store.questions, id);
 
         this.addMessageToConversation(this.createMassage('user', question));
         this.addMessageToConversation(this.createMassage('chatbot', answer));

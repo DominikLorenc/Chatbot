@@ -39,7 +39,7 @@ interface IChatbotUtils {
     addAttributes: (element: Element, attributes: string[][]) => void;
     getElement: (elementClassName: string) => HTMLElement;
     delay: (time: number, callback: () => void) => void;
-    filterId: (array: QuestionsType, id: string) => IQuestions;
+    getArrayElementById: (array: QuestionsType, id: string) => IQuestions;
     setAnimation: (elementToAnimation: HTMLElement, animationName: string) => void;
 }
 
