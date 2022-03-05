@@ -31,7 +31,7 @@ const chatbotUtils: IChatbotUtils = class ChatbotUtils {
         });
     };
 
-    static getElementExist = (elementClassName: string) => {
+    static getElement = (elementClassName: string) => {
         if (document.querySelector(elementClassName) === null) {
             throw new Error(`Element ${elementClassName} is not exist`);
         }

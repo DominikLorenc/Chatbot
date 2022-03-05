@@ -37,7 +37,7 @@ interface IChatbotUtils {
     setdivWithImg: (classNameDiv: string, src: string) => HTMLElement;
     createDivWithElements: (parent: HTMLElement, ...childElement: HTMLElement[]) => void;
     addAttributes: (element: Element, attributes: string[][]) => void;
-    getElementExist: (elementClassName: string) => HTMLElement;
+    getElement: (elementClassName: string) => HTMLElement;
     delay: (time: number, callback: () => void) => void;
     filterId: (array: QuestionsType, id: string) => IQuestions;
     setAnimation: (elementToAnimation: HTMLElement, animationName: string) => void;

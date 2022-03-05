@@ -12,10 +12,10 @@ class ChatbotLogic implements IChatbotLogic {
     }
 
     openChat = (createChatFn: Function) => {
-        const chatbotLuncherWrapper = ChatbotUtils.getElementExist('.chatbot__luncher');
+        const chatbotLuncherWrapper = ChatbotUtils.getElement('.chatbot__luncher');
 
         if (this.store.isChatCreated) {
-            const chat = ChatbotUtils.getElementExist('.chat');
+            const chat = ChatbotUtils.getElement('.chat');
             this.toggleAnimation('open', chatbotLuncherWrapper, chat);
         } else {
             this.store.isChatCreated = true;
@@ -25,8 +25,8 @@ class ChatbotLogic implements IChatbotLogic {
     };
 
     closeChat = () => {
-        const chatbotLuncherWrapper = ChatbotUtils.getElementExist('.chatbot__luncher');
-        const chat = ChatbotUtils.getElementExist('.chat');
+        const chatbotLuncherWrapper = ChatbotUtils.getElement('.chatbot__luncher');
+        const chat = ChatbotUtils.getElement('.chat');
         this.toggleAnimation('close', chatbotLuncherWrapper, chat);
     };
 
@@ -46,7 +46,7 @@ class ChatbotLogic implements IChatbotLogic {
     };
 
     switchButton = (e: Event) => {
-        const icon = ChatbotUtils.getElementExist('.chat__typing__submit-icon');
+        const icon = ChatbotUtils.getElement('.chat__typing__submit-icon');
 
         const target = e.target as HTMLInputElement;
         if (target.value.length > 0) {
@@ -70,7 +70,7 @@ class ChatbotLogic implements IChatbotLogic {
         ChatbotUtils.delay(1000, this.createQuestionsMessage);
         input.value = '';
 
-        const icon = ChatbotUtils.getElementExist('.chat__typing__submit-icon');
+        const icon = ChatbotUtils.getElement('.chat__typing__submit-icon');
         ChatbotUtils.addAttributes(icon, [['src', icons.offIcon]]);
     };
 
@@ -102,7 +102,7 @@ class ChatbotLogic implements IChatbotLogic {
     };
 
     addMessageToConversation = (message: HTMLElement) => {
-        const conversation = ChatbotUtils.getElementExist('.chat__conversation'); // getElement
+        const conversation = ChatbotUtils.getElement('.chat__conversation'); // getElement
         ChatbotUtils.addElement(conversation, message);
     };
 
@@ -135,7 +135,7 @@ class ChatbotLogic implements IChatbotLogic {
     };
 
     removeQuestionMessage = () => {
-        const questions = ChatbotUtils.getElementExist('.questions');
+        const questions = ChatbotUtils.getElement('.questions');
         questions.remove();
     };
 }

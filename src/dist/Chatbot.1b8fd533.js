@@ -183,7 +183,7 @@ var chatbotUtils = (_a = function () {
   attributes.forEach(function (attribut) {
     element.setAttribute(attribut[0], attribut[1]);
   });
-}, _a.getElementExist = function (elementClassName) {
+}, _a.getElement = function (elementClassName) {
   if (document.querySelector(elementClassName) === null) {
     throw new Error("Element ".concat(elementClassName, " is not exist"));
   }
@@ -268,7 +268,7 @@ var ChatbotElementCreator = function () {
 
     this.createChat = function () {
       var rootChatElement = ChatbotUtils_1.default.createElmentWithClass('chat');
-      var chatbot = ChatbotUtils_1.default.getElementExist('.chatbot');
+      var chatbot = ChatbotUtils_1.default.getElement('.chatbot');
 
       var chatTop = _this.createTopBarChat();
 
@@ -349,10 +349,10 @@ var ChatbotLogic = function () {
     var _this = this;
 
     this.openChat = function (createChatFn) {
-      var chatbotLuncherWrapper = ChatbotUtils_1.default.getElementExist('.chatbot__luncher');
+      var chatbotLuncherWrapper = ChatbotUtils_1.default.getElement('.chatbot__luncher');
 
       if (_this.store.isChatCreated) {
-        var chat = ChatbotUtils_1.default.getElementExist('.chat');
+        var chat = ChatbotUtils_1.default.getElement('.chat');
 
         _this.toggleAnimation('open', chatbotLuncherWrapper, chat);
       } else {
@@ -363,8 +363,8 @@ var ChatbotLogic = function () {
     };
 
     this.closeChat = function () {
-      var chatbotLuncherWrapper = ChatbotUtils_1.default.getElementExist('.chatbot__luncher');
-      var chat = ChatbotUtils_1.default.getElementExist('.chat');
+      var chatbotLuncherWrapper = ChatbotUtils_1.default.getElement('.chatbot__luncher');
+      var chat = ChatbotUtils_1.default.getElement('.chat');
 
       _this.toggleAnimation('close', chatbotLuncherWrapper, chat);
     };
@@ -387,7 +387,7 @@ var ChatbotLogic = function () {
     };
 
     this.switchButton = function (e) {
-      var icon = ChatbotUtils_1.default.getElementExist('.chat__typing__submit-icon');
+      var icon = ChatbotUtils_1.default.getElement('.chat__typing__submit-icon');
       var target = e.target;
 
       if (target.value.length > 0) {
@@ -411,7 +411,7 @@ var ChatbotLogic = function () {
 
       ChatbotUtils_1.default.delay(1000, _this.createQuestionsMessage);
       input.value = '';
-      var icon = ChatbotUtils_1.default.getElementExist('.chat__typing__submit-icon');
+      var icon = ChatbotUtils_1.default.getElement('.chat__typing__submit-icon');
       ChatbotUtils_1.default.addAttributes(icon, [['src', icons_1.default.offIcon]]);
     };
 
@@ -444,7 +444,7 @@ var ChatbotLogic = function () {
     };
 
     this.addMessageToConversation = function (message) {
-      var conversation = ChatbotUtils_1.default.getElementExist('.chat__conversation'); // getElement
+      var conversation = ChatbotUtils_1.default.getElement('.chat__conversation'); // getElement
 
       ChatbotUtils_1.default.addElement(conversation, message);
     };
@@ -489,7 +489,7 @@ var ChatbotLogic = function () {
     };
 
     this.removeQuestionMessage = function () {
-      var questions = ChatbotUtils_1.default.getElementExist('.questions');
+      var questions = ChatbotUtils_1.default.getElement('.questions');
       questions.remove();
     };
 

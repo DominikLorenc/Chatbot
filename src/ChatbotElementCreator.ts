@@ -45,7 +45,7 @@ class ChatbotElementCreator implements IChatbotElementCreator {
 
     createChat = () => {
         const rootChatElement = ChatbotUtils.createElmentWithClass('chat');
-        const chatbot = ChatbotUtils.getElementExist('.chatbot');
+        const chatbot = ChatbotUtils.getElement('.chatbot');
 
         const chatTop = this.createTopBarChat();
         const chatConversation = this.createConersation();
