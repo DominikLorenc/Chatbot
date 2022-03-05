@@ -34,7 +34,7 @@ interface IChatbotElementCreator {
 interface IChatbotUtils {
     createElmentWithClass: <T extends HTMLElement>(className: string, typeElement?: string) => T;
     addElement: (parentElement: Element, childElement: Element) => void;
-    divWithImg: (classNameDiv: string, src: string) => HTMLElement;
+    setdivWithImg: (classNameDiv: string, src: string) => HTMLElement;
     createDivWithElements: (parent: HTMLElement, ...childElement: HTMLElement[]) => void;
     addAttributes: (element: Element, attributes: string[][]) => void;
     getElementExist: (elementClassName: string) => HTMLElement;

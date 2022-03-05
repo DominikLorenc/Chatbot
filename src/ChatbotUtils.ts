@@ -12,7 +12,7 @@ const chatbotUtils: IChatbotUtils = class ChatbotUtils {
         parentElement.appendChild(childElement);
     };
 
-    static divWithImg = (classNameDiv: string, src: string) => {
+    static setdivWithImg = (classNameDiv: string, src: string) => {
         const div = this.createElmentWithClass(classNameDiv);
         const img = this.createElmentWithClass(`${classNameDiv}-icon`, 'img');
         img.setAttribute('src', src);

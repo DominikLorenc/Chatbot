@@ -159,7 +159,7 @@ var chatbotUtils = (_a = function () {
   return element;
 }, _a.addElement = function (parentElement, childElement) {
   parentElement.appendChild(childElement);
-}, _a.divWithImg = function (classNameDiv, src) {
+}, _a.setdivWithImg = function (classNameDiv, src) {
   var div = _a.createElmentWithClass(classNameDiv);
 
   var img = _a.createElmentWithClass("".concat(classNameDiv, "-icon"), 'img');
@@ -245,7 +245,7 @@ var ChatbotElementCreator = function () {
     this.createLuncher = function () {
       var rootElement = _this.store.rootElement;
       var chatbot = ChatbotUtils_1.default.createElmentWithClass('chatbot');
-      var chatbotLuncher = ChatbotUtils_1.default.divWithImg('chatbot__luncher', icons_1.default.luncherIcon);
+      var chatbotLuncher = ChatbotUtils_1.default.setdivWithImg('chatbot__luncher', icons_1.default.luncherIcon);
       ChatbotUtils_1.default.addElement(rootElement, chatbot);
       ChatbotUtils_1.default.addElement(chatbot, chatbotLuncher);
       chatbotLuncher.addEventListener('click', function () {
@@ -255,9 +255,9 @@ var ChatbotElementCreator = function () {
 
     this.createTopBarChat = function () {
       var chatTop = ChatbotUtils_1.default.createElmentWithClass('chat__top');
-      var chatTopAvatar = ChatbotUtils_1.default.divWithImg('chat__top-avatar', icons_1.default.topAvatarIcon);
+      var chatTopAvatar = ChatbotUtils_1.default.setdivWithImg('chat__top-avatar', icons_1.default.topAvatarIcon);
       var chatTopName = ChatbotUtils_1.default.createElmentWithClass('chat__top-name');
-      var chatClose = ChatbotUtils_1.default.divWithImg('chat__top-closeBtn', icons_1.default.closeIcon);
+      var chatClose = ChatbotUtils_1.default.setdivWithImg('chat__top-closeBtn', icons_1.default.closeIcon);
       chatTopName.textContent = 'ChatBot';
       ChatbotUtils_1.default.createDivWithElements(chatTop, chatTopAvatar, chatTopName, chatClose);
       chatClose.addEventListener('click', function () {
@@ -1454,7 +1454,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58440" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51541" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

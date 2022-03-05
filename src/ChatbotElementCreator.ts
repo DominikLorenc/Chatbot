@@ -18,7 +18,7 @@ class ChatbotElementCreator implements IChatbotElementCreator {
 
         const chatbot = ChatbotUtils.createElmentWithClass('chatbot');
 
-        const chatbotLuncher = ChatbotUtils.divWithImg('chatbot__luncher', icons.luncherIcon);
+        const chatbotLuncher = ChatbotUtils.setdivWithImg('chatbot__luncher', icons.luncherIcon);
 
         ChatbotUtils.addElement(rootElement, chatbot);
         ChatbotUtils.addElement(chatbot, chatbotLuncher);
@@ -30,9 +30,9 @@ class ChatbotElementCreator implements IChatbotElementCreator {
 
     createTopBarChat = () => {
         const chatTop = ChatbotUtils.createElmentWithClass('chat__top');
-        const chatTopAvatar = ChatbotUtils.divWithImg('chat__top-avatar', icons.topAvatarIcon);
+        const chatTopAvatar = ChatbotUtils.setdivWithImg('chat__top-avatar', icons.topAvatarIcon);
         const chatTopName = ChatbotUtils.createElmentWithClass('chat__top-name');
-        const chatClose = ChatbotUtils.divWithImg('chat__top-closeBtn', icons.closeIcon);
+        const chatClose = ChatbotUtils.setdivWithImg('chat__top-closeBtn', icons.closeIcon);
 
         chatTopName.textContent = 'ChatBot';
 

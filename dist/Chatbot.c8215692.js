@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"ChatbotStore.ts":[function(require,module,exports) {
+})({"vw78":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -135,7 +135,7 @@ var ChatbotStore = function () {
 }();
 
 exports.default = ChatbotStore;
-},{}],"ChatbotUtils.ts":[function(require,module,exports) {
+},{}],"DySJ":[function(require,module,exports) {
 "use strict";
 
 var _a;
@@ -207,7 +207,7 @@ var chatbotUtils = (_a = function () {
   elementToAnimation.style.animation = animationName;
 }, _a);
 exports.default = chatbotUtils;
-},{}],"assets/icons.ts":[function(require,module,exports) {
+},{}],"inJZ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -221,7 +221,7 @@ var icons = {
   offIcon: "https://img.icons8.com/external-kmg-design-glyph-kmg-design/28/000000/external-send-user-interface-kmg-design-glyph-kmg-design.png"
 };
 exports.default = icons;
-},{}],"ChatbotElementCreator.ts":[function(require,module,exports) {
+},{}],"PR4I":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -314,7 +314,7 @@ var ChatbotElementCreator = function () {
 }();
 
 exports.default = ChatbotElementCreator;
-},{"./ChatbotUtils":"ChatbotUtils.ts","./assets/icons":"assets/icons.ts"}],"constans.ts":[function(require,module,exports) {
+},{"./ChatbotUtils":"DySJ","./assets/icons":"inJZ"}],"rUKC":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -325,7 +325,7 @@ var SHOW_ANIMATION = 'show .4s forwards';
 exports.SHOW_ANIMATION = SHOW_ANIMATION;
 var HIDE_ANIMATION = 'hide .4s forwards';
 exports.HIDE_ANIMATION = HIDE_ANIMATION;
-},{}],"ChatbotLogic.ts":[function(require,module,exports) {
+},{}],"aydE":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -500,7 +500,7 @@ var ChatbotLogic = function () {
 }();
 
 exports.default = ChatbotLogic;
-},{"./ChatbotUtils":"ChatbotUtils.ts","./constans":"constans.ts","./assets/icons":"assets/icons.ts"}],"ChatbotController.ts":[function(require,module,exports) {
+},{"./ChatbotUtils":"DySJ","./constans":"rUKC","./assets/icons":"inJZ"}],"yFeO":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -529,7 +529,7 @@ var ChatbotController = function () {
 }();
 
 exports.default = ChatbotController;
-},{"./ChatbotElementCreator":"ChatbotElementCreator.ts","./ChatbotLogic":"ChatbotLogic.ts"}],"../node_modules/uuid/dist/esm-browser/rng.js":[function(require,module,exports) {
+},{"./ChatbotElementCreator":"PR4I","./ChatbotLogic":"aydE"}],"saRr":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -556,7 +556,7 @@ function rng() {
 
   return getRandomValues(rnds8);
 }
-},{}],"../node_modules/uuid/dist/esm-browser/regex.js":[function(require,module,exports) {
+},{}],"Kfyb":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -565,7 +565,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;
 exports.default = _default;
-},{}],"../node_modules/uuid/dist/esm-browser/validate.js":[function(require,module,exports) {
+},{}],"dh4g":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -583,7 +583,7 @@ function validate(uuid) {
 
 var _default = validate;
 exports.default = _default;
-},{"./regex.js":"../node_modules/uuid/dist/esm-browser/regex.js"}],"../node_modules/uuid/dist/esm-browser/stringify.js":[function(require,module,exports) {
+},{"./regex.js":"Kfyb"}],"Okf7":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -624,7 +624,7 @@ function stringify(arr) {
 
 var _default = stringify;
 exports.default = _default;
-},{"./validate.js":"../node_modules/uuid/dist/esm-browser/validate.js"}],"../node_modules/uuid/dist/esm-browser/v1.js":[function(require,module,exports) {
+},{"./validate.js":"dh4g"}],"ds1e":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -732,7 +732,7 @@ function v1(options, buf, offset) {
 
 var _default = v1;
 exports.default = _default;
-},{"./rng.js":"../node_modules/uuid/dist/esm-browser/rng.js","./stringify.js":"../node_modules/uuid/dist/esm-browser/stringify.js"}],"../node_modules/uuid/dist/esm-browser/parse.js":[function(require,module,exports) {
+},{"./rng.js":"saRr","./stringify.js":"Okf7"}],"i9qQ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -778,7 +778,7 @@ function parse(uuid) {
 
 var _default = parse;
 exports.default = _default;
-},{"./validate.js":"../node_modules/uuid/dist/esm-browser/validate.js"}],"../node_modules/uuid/dist/esm-browser/v35.js":[function(require,module,exports) {
+},{"./validate.js":"dh4g"}],"jljL":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -857,7 +857,7 @@ function _default(name, version, hashfunc) {
   generateUUID.URL = URL;
   return generateUUID;
 }
-},{"./stringify.js":"../node_modules/uuid/dist/esm-browser/stringify.js","./parse.js":"../node_modules/uuid/dist/esm-browser/parse.js"}],"../node_modules/uuid/dist/esm-browser/md5.js":[function(require,module,exports) {
+},{"./stringify.js":"Okf7","./parse.js":"i9qQ"}],"z990":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1081,7 +1081,7 @@ function md5ii(a, b, c, d, x, s, t) {
 
 var _default = md5;
 exports.default = _default;
-},{}],"../node_modules/uuid/dist/esm-browser/v3.js":[function(require,module,exports) {
+},{}],"Nc2A":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1098,7 +1098,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var v3 = (0, _v.default)('v3', 0x30, _md.default);
 var _default = v3;
 exports.default = _default;
-},{"./v35.js":"../node_modules/uuid/dist/esm-browser/v35.js","./md5.js":"../node_modules/uuid/dist/esm-browser/md5.js"}],"../node_modules/uuid/dist/esm-browser/v4.js":[function(require,module,exports) {
+},{"./v35.js":"jljL","./md5.js":"z990"}],"HQTZ":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1136,7 +1136,7 @@ function v4(options, buf, offset) {
 
 var _default = v4;
 exports.default = _default;
-},{"./rng.js":"../node_modules/uuid/dist/esm-browser/rng.js","./stringify.js":"../node_modules/uuid/dist/esm-browser/stringify.js"}],"../node_modules/uuid/dist/esm-browser/sha1.js":[function(require,module,exports) {
+},{"./rng.js":"saRr","./stringify.js":"Okf7"}],"F2vf":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1241,7 +1241,7 @@ function sha1(bytes) {
 
 var _default = sha1;
 exports.default = _default;
-},{}],"../node_modules/uuid/dist/esm-browser/v5.js":[function(require,module,exports) {
+},{}],"oZbo":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1258,7 +1258,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var v5 = (0, _v.default)('v5', 0x50, _sha.default);
 var _default = v5;
 exports.default = _default;
-},{"./v35.js":"../node_modules/uuid/dist/esm-browser/v35.js","./sha1.js":"../node_modules/uuid/dist/esm-browser/sha1.js"}],"../node_modules/uuid/dist/esm-browser/nil.js":[function(require,module,exports) {
+},{"./v35.js":"jljL","./sha1.js":"F2vf"}],"Bkgj":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1267,7 +1267,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = '00000000-0000-0000-0000-000000000000';
 exports.default = _default;
-},{}],"../node_modules/uuid/dist/esm-browser/version.js":[function(require,module,exports) {
+},{}],"kmp0":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1289,7 +1289,7 @@ function version(uuid) {
 
 var _default = version;
 exports.default = _default;
-},{"./validate.js":"../node_modules/uuid/dist/esm-browser/validate.js"}],"../node_modules/uuid/dist/esm-browser/index.js":[function(require,module,exports) {
+},{"./validate.js":"dh4g"}],"D6fo":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1369,7 +1369,7 @@ var _stringify = _interopRequireDefault(require("./stringify.js"));
 var _parse = _interopRequireDefault(require("./parse.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./v1.js":"../node_modules/uuid/dist/esm-browser/v1.js","./v3.js":"../node_modules/uuid/dist/esm-browser/v3.js","./v4.js":"../node_modules/uuid/dist/esm-browser/v4.js","./v5.js":"../node_modules/uuid/dist/esm-browser/v5.js","./nil.js":"../node_modules/uuid/dist/esm-browser/nil.js","./version.js":"../node_modules/uuid/dist/esm-browser/version.js","./validate.js":"../node_modules/uuid/dist/esm-browser/validate.js","./stringify.js":"../node_modules/uuid/dist/esm-browser/stringify.js","./parse.js":"../node_modules/uuid/dist/esm-browser/parse.js"}],"utils.ts":[function(require,module,exports) {
+},{"./v1.js":"ds1e","./v3.js":"Nc2A","./v4.js":"HQTZ","./v5.js":"oZbo","./nil.js":"Bkgj","./version.js":"kmp0","./validate.js":"dh4g","./stringify.js":"Okf7","./parse.js":"i9qQ"}],"UnXq":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1396,7 +1396,7 @@ var questions = [{
   answer: 'Lorem ipsusentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, nemo?'
 }];
 exports.default = questions;
-},{"uuid":"../node_modules/uuid/dist/esm-browser/index.js"}],"Chatbot.ts":[function(require,module,exports) {
+},{"uuid":"D6fo"}],"XGDT":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -1426,209 +1426,5 @@ var Chatbot = function () {
 }();
 
 var chat = new Chatbot(utils_1.default);
-},{"./ChatbotStore":"ChatbotStore.ts","./ChatbotController":"ChatbotController.ts","./utils":"utils.ts"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
-var global = arguments[3];
-var OVERLAY_ID = '__parcel__error__overlay__';
-var OldModule = module.bundle.Module;
-
-function Module(moduleName) {
-  OldModule.call(this, moduleName);
-  this.hot = {
-    data: module.bundle.hotData,
-    _acceptCallbacks: [],
-    _disposeCallbacks: [],
-    accept: function (fn) {
-      this._acceptCallbacks.push(fn || function () {});
-    },
-    dispose: function (fn) {
-      this._disposeCallbacks.push(fn);
-    }
-  };
-  module.bundle.hotData = null;
-}
-
-module.bundle.Module = Module;
-var checkedAssets, assetsToAccept;
-var parent = module.bundle.parent;
-
-if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = "" || location.hostname;
-  var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58440" + '/');
-
-  ws.onmessage = function (event) {
-    checkedAssets = {};
-    assetsToAccept = [];
-    var data = JSON.parse(event.data);
-
-    if (data.type === 'update') {
-      var handled = false;
-      data.assets.forEach(function (asset) {
-        if (!asset.isNew) {
-          var didAccept = hmrAcceptCheck(global.parcelRequire, asset.id);
-
-          if (didAccept) {
-            handled = true;
-          }
-        }
-      }); // Enable HMR for CSS by default.
-
-      handled = handled || data.assets.every(function (asset) {
-        return asset.type === 'css' && asset.generated.js;
-      });
-
-      if (handled) {
-        console.clear();
-        data.assets.forEach(function (asset) {
-          hmrApply(global.parcelRequire, asset);
-        });
-        assetsToAccept.forEach(function (v) {
-          hmrAcceptRun(v[0], v[1]);
-        });
-      } else if (location.reload) {
-        // `location` global exists in a web worker context but lacks `.reload()` function.
-        location.reload();
-      }
-    }
-
-    if (data.type === 'reload') {
-      ws.close();
-
-      ws.onclose = function () {
-        location.reload();
-      };
-    }
-
-    if (data.type === 'error-resolved') {
-      console.log('[parcel] ✨ Error resolved');
-      removeErrorOverlay();
-    }
-
-    if (data.type === 'error') {
-      console.error('[parcel] 🚨  ' + data.error.message + '\n' + data.error.stack);
-      removeErrorOverlay();
-      var overlay = createErrorOverlay(data);
-      document.body.appendChild(overlay);
-    }
-  };
-}
-
-function removeErrorOverlay() {
-  var overlay = document.getElementById(OVERLAY_ID);
-
-  if (overlay) {
-    overlay.remove();
-  }
-}
-
-function createErrorOverlay(data) {
-  var overlay = document.createElement('div');
-  overlay.id = OVERLAY_ID; // html encode message and stack trace
-
-  var message = document.createElement('div');
-  var stackTrace = document.createElement('pre');
-  message.innerText = data.error.message;
-  stackTrace.innerText = data.error.stack;
-  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
-  return overlay;
-}
-
-function getParents(bundle, id) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return [];
-  }
-
-  var parents = [];
-  var k, d, dep;
-
-  for (k in modules) {
-    for (d in modules[k][1]) {
-      dep = modules[k][1][d];
-
-      if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
-        parents.push(k);
-      }
-    }
-  }
-
-  if (bundle.parent) {
-    parents = parents.concat(getParents(bundle.parent, id));
-  }
-
-  return parents;
-}
-
-function hmrApply(bundle, asset) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return;
-  }
-
-  if (modules[asset.id] || !bundle.parent) {
-    var fn = new Function('require', 'module', 'exports', asset.generated.js);
-    asset.isNew = !modules[asset.id];
-    modules[asset.id] = [fn, asset.deps];
-  } else if (bundle.parent) {
-    hmrApply(bundle.parent, asset);
-  }
-}
-
-function hmrAcceptCheck(bundle, id) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return;
-  }
-
-  if (!modules[id] && bundle.parent) {
-    return hmrAcceptCheck(bundle.parent, id);
-  }
-
-  if (checkedAssets[id]) {
-    return;
-  }
-
-  checkedAssets[id] = true;
-  var cached = bundle.cache[id];
-  assetsToAccept.push([bundle, id]);
-
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    return true;
-  }
-
-  return getParents(global.parcelRequire, id).some(function (id) {
-    return hmrAcceptCheck(global.parcelRequire, id);
-  });
-}
-
-function hmrAcceptRun(bundle, id) {
-  var cached = bundle.cache[id];
-  bundle.hotData = {};
-
-  if (cached) {
-    cached.hot.data = bundle.hotData;
-  }
-
-  if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
-    cached.hot._disposeCallbacks.forEach(function (cb) {
-      cb(bundle.hotData);
-    });
-  }
-
-  delete bundle.cache[id];
-  bundle(id);
-  cached = bundle.cache[id];
-
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    cached.hot._acceptCallbacks.forEach(function (cb) {
-      cb();
-    });
-
-    return true;
-  }
-}
-},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","Chatbot.ts"], null)
-//# sourceMappingURL=/Chatbot.1b8fd533.js.map
+},{"./ChatbotStore":"vw78","./ChatbotController":"yFeO","./utils":"UnXq"}]},{},["XGDT"], null)
+//# sourceMappingURL=Chatbot.c8215692.js.map
