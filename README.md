@@ -29,6 +29,12 @@ If you have any issues, please let me know in the issues section or directly to 
 
 ## Installation 💾
 
+```bash
+git clone https://dominiklorenc.github.io/Chatbot/
+npm install
+npm start
+```
+
 ## Live 📍
 https://dominiklorenc.github.io/Chatbot/
 
